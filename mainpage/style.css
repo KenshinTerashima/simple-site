@@ -1,0 +1,272 @@
+body {
+  background-color: #c5d1ce;
+}
+
+header {
+  background-color: #9ca4b9;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+h1{
+  text-align: center;
+  margin: 40px 0;
+  font-size: 35px;
+  background-color: #799c93;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 80px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2列 */
+  grid-template-rows: repeat(2, 1fr);    /* 3行 */
+  gap: 10px; /* グリッドアイテム間の間隔 */
+  margin: 0 120px;
+}
+
+.grid-item {
+  border: 1px solid #ccc; /* 枠線を追加（任意） */
+  padding: 10px; /* 内部の余白（任意） */
+  text-align: center; /* 画像を中央に配置（任意） */
+}
+
+.grid-item img {
+  max-width: 100%; /* 画像をコンテナに合わせる */
+  height: auto; /* アスペクト比を維持 */
+}
+
+.GoogleMap {
+  text-align: center;
+  margin: 30px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* オプション: h2 要素にスタイルを追加してセンタリングを強調 */
+.table h2 {
+  text-align: center;
+  margin: 20px 0;
+  background-color: #799c93;
+
+}
+
+/* オプション: 表にスタイルを追加 */
+.table table {
+  border-collapse: collapse;
+  width: 80%; /* 表の幅を調整 */
+  max-width: 400px; /* 最大幅を設定 */
+  border: 1px solid #ccc;
+}
+
+.table td, .table th {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.Form {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+.Form h2 {
+  text-align: center;
+  background-color: #799c93;
+
+}
+@media screen and (max-width: 480px) {
+  .Form {
+    margin-top: 40px;
+  }
+}
+.Form-Item {
+  border-top: 1px solid #ddd;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-wrap: wrap;
+  }
+}
+.Form-Item:nth-child(5) {
+  border-bottom: 1px solid #ddd;
+}
+.Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label {
+    max-width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+}
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label.isMsg {
+    margin-top: 0;
+  }
+}
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  background: #5bc8ac;
+  color: #fff;
+  font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label-Required {
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 32px;
+    font-size: 10px;
+  }
+}
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #5bc8ac;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+  }
+}
+
+#reload-button {
+  display: block; /* ブロック要素に変更して、中央揃えを有効にする */
+  margin: 40px auto; /* 左右の余白を自動的に調整して中央に配置 */
+  text-align: center; /* ボタン内のテキストを中央に配置 */
+  width: 150px; /* ボタンの幅を適切なサイズに調整 */
+}
+
+#loading-screen {
+  text-align: center; /* テキストを中央揃えにする */
+  margin-top: 20px; /* 上部の余白を調整（必要に応じて変更） */
+}
+
+
+
+footer {
+  margin: 50px 0;
+}
